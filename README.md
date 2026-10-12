@@ -9,7 +9,7 @@ Comprender experimentalmente cómo Linux crea y administra procesos y cómo proc
 ## Integrantes:
 - Justin David Vargas Vasquez
 - Cristian Andrés Díaz Ortega
-- Integrante 3
+- Josue Gabriel Caviativa Cardenas
 - Integrante 4
 ---
 
