@@ -41,5 +41,33 @@
 #define SEGUNDOS_ESPERA_CONEXION 5 /* reintentos del cliente FIFO al conectar */
 #define SEGUNDOS_VIGILANCIA  2    /* periodo para comprobar si el otro vive  */
 
+/* Códigos de operación (campo solicitud_t.operacion). */
+typedef enum {
+    OP_BUSCAR_CATEGORIA = 1,
+    OP_BUSCAR_PRECIO    = 2,
+    OP_BUSCAR_NOMBRE    = 3,
+    OP_DESCONECTAR      = 8,
+    OP_TERMINAR         = 9
+} codigo_operacion_t;
+
+/* Tipos de respuesta servidor -> cliente por la FIFO. */
+typedef enum {
+    RESP_REGISTRO = 1,
+    RESP_FIN      = 2,
+    RESP_ERROR    = 3,
+    RESP_ADIOS    = 4
+} codigo_respuesta_t;
+
+/* Estados de la región compartida. */
+typedef enum {
+    EST_LIBRE     = 0,
+    EST_SOLICITUD = 1,
+    EST_BLOQUE    = 2,
+    EST_FIN       = 3,
+    EST_ERROR     = 4,
+    EST_ADIOS     = 5
+} estado_region_t;
+
+
 
 #endif /* PROTOCOLO_H */
