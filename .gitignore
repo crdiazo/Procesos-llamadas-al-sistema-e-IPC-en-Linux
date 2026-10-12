@@ -1,0 +1,17 @@
+# Binarios y objetos
+bin/
+obj/
+*.o
+*.a
+
+# Temporales de editores
+*.swp
+*~
+.vscode/
+.idea/
+
+# Volcados de memoria
+core
+
+# Recursos IPC residuales (por si se generan dentro del repo)
+/tmp/fifo_*
