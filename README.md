@@ -10,7 +10,7 @@ Comprender experimentalmente cómo Linux crea y administra procesos y cómo proc
 - Justin David Vargas Vasquez
 - Cristian Andrés Díaz Ortega
 - Josue Gabriel Caviativa Cardenas
-- Integrante 4
+- Keller Joseph Guzmán Ariza
 ---
 
 ## 1. Descripción del Dataset Utilizado
