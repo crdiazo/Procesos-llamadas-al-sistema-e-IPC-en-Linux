@@ -364,4 +364,4 @@ Cada integrante comprende y puede modificar todo el código entregado.
  
 ## 11. Control de versiones
  
-Repositorio: https://github.com/crdiazo/Procesos-llamadas-al-sistema-e-IPC-en-Linux. El historial refleja el trabajo de cada integrante (`git log --oneline --author="nombre"`). 
+Repositorio: https://github.com/crdiazo/Procesos-llamadas-al-sistema-e-IPC-en-Linux. 
