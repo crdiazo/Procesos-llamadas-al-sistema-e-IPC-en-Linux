@@ -4,7 +4,7 @@ Comprender experimentalmente cómo Linux crea y administra procesos y cómo proc
 **Asignatura:** Sistemas Operativos  
 **Implementación:** Lenguaje C (C11 / POSIX.1-2008)  
 **Mecanismos IPC desarrollados:** Tuberías Nombradas (FIFO) y Memoria Compartida POSIX con Semáforos POSIX  
-**Grupo de trabajo:** `grupo1` (configurable mediante `make GRUPO=<nombre>`)
+**Grupo de trabajo:** `Los_illuminati` (configurable mediante `make GRUPO=<nombre>`)
 
 ## Integrantes:
 - Justin David Vargas Vasquez <jusvargasva@unal.edu.co> 
