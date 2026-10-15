@@ -319,7 +319,9 @@ Estos comandos permiten analizar la jerarqu[ia de procesos del sistema y, espec�
  
 ---
  
-## 8. Preguntas del enunciado
+## 8. Preguntas para mayor entendimiento de conceptos
+ Estas preguntas permiten entender y profundizar los conceptos utilizados en este codigo para mayor entendimiento de los conceptos y la utilidad de estos en proyectos reales.
+ A continuación se ven estas preguntas seccionadas en dos partes dada las infraestructuras utilizadas, tanto FIFO como memoria compartida. De igual manera se puede observar la respuesta a estas. Se recomienda ver y ejecutar el codigo para mayor entendimiento de este.
  
 ### Parte A (FIFO)
  
@@ -333,8 +335,7 @@ Estos comandos permiten analizar la jerarqu[ia de procesos del sistema y, espec�
 2. **¿Qué condición de carrera aparecería sin ella?** El cliente podría leer un registro a medio escribir, el servidor podría sobrescribir el bloque antes de que el cliente lo copie, o dos clientes podrían mezclar bytes de sus solicitudes.
 3. **FIFO vs. memoria compartida:** la FIFO copia los datos usuario → núcleo → usuario y se sincroniza sola; la memoria compartida evita esas copias pero exige semáforos explícitos.
 4. **¿Qué pasa con los recursos IPC si un proceso muere?** Los objetos POSIX (`/dev/shm`) persisten hasta `shm_unlink`/`sem_unlink` o hasta reiniciar; un semáforo tomado por un proceso muerto queda bloqueado. Por eso el servidor limpia los restos al arrancar y las esperas vigilan al otro proceso. En FIFO, el núcleo cierra los descriptores del proceso muerto y el otro extremo ve EOF o `EPIPE`, pero el archivo de la FIFO queda en `/tmp`.
-### Preguntas de sustentación (practicar con el código)
- 
+### Preguntas de sustentación  
 - Identificar procesos con sus PID y PPID (`ps`, `pstree`, `/proc/<pid>/status`).
 - Explicar una llamada al sistema vista con `strace` (por ejemplo `ftruncate` tras `shm_open`: el objeto nace con 0 bytes y sin `ftruncate` el acceso produce `SIGBUS`).
 - Mostrar cuándo y por qué un proceso queda bloqueado (Observación 2).
